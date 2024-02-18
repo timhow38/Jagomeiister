@@ -47,6 +47,7 @@ body {
 
 .background {
 	background: url(../images/vectors/logo.svg);
+	background-position: center;
 	background-repeat: no-repeat;
 	position: fixed;
 	width: 100%;
