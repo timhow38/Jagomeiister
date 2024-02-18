@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Scroll event listener to reveal sections
-    window.addEventListener("scroll", revealSections);
-
     // Function to reveal sections when scrolled into view
     function revealSections() {
         const sections = document.querySelectorAll("section");
@@ -15,39 +12,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Scroll event listener to reveal sections
+    window.addEventListener("scroll", revealSections);
+
     // Form submission event listener for contact form
     const contactForm = document.getElementById("contact-form");
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Validate form fields
-        const nameInput = contactForm.querySelector("#name");
-        const emailInput = contactForm.querySelector("#email");
-        const messageInput = contactForm.querySelector("#message");
+        // Get form input values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
-        // Validate name field
-        if (nameInput.value.trim() === "") {
-            alert("Please enter your name.");
-            nameInput.focus();
-            return;
-        }
+        // Here you can perform any validation if needed
 
-        // Validate email field
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(emailInput.value.trim())) {
-            alert("Please enter a valid email address.");
-            emailInput.focus();
-            return;
-        }
+        // Display a message to the user
+        const formMessage = document.getElementById("form-message");
+        formMessage.textContent = "Thank you for your message, " + name + "! We'll get back to you soon.";
 
-        // Validate message field
-        if (messageInput.value.trim() === "") {
-            alert("Please enter a message.");
-            messageInput.focus();
-            return;
-        }
-
-        // If all fields are valid, submit the form
-        this.submit();
+        // Optionally, you can clear the form fields after submission
+        contactForm.reset();
     });
+
+    // Initial call to reveal sections on page load
+    revealSections();
 });
