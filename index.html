@@ -1,118 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Jago - CV</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jordan Jago - CV</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<link rel="shortcut icon" href="./images/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicons/site.webmanifest">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
 </head>
+
 <body>
-    <header>
-    <div class="profile-picture-container">
-        <img class="profile-picture" src="profile-picture.jpg" alt="Your Name">
-    </div>
-    <h1>Jordan Jago</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-     </header>
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a highly motivated and passionate Cyber Security Graduate with a drive to succeed. I have a deep interest in Cyber Security and Artificial Intelligence and am currently doing an internship in the Cyber Security field.
-                I am a quick learner and have a positive attitude towards problem-solving. I believe in keeping up to date with the latest trends in the industry, and strive to hone my skills in order to meet the requirements of the job.
-                My goal is to provide quality work and a high standard of service to my employers, and to continue to develop my skills and knowledge in the field of Cyber Security.</p>
-        </section>
+	
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="background"></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section01">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section02">Experience</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section03">Github</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section01">Who am I?</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section02">Qualifications</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-section03">TryHackMe</a></div>
+		<div class="pages-nav__item pages-nav__item--small link--faded link-point link-border-right">Personal</div>
+		<div class="pages-nav__item pages-nav__item--small link--faded link-point">Career</div>
+		<div class="pages-nav__item pages-nav__item--small link--faded link-point link-border-left">Find Me?</div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded link-white" href="https://github.com/Jagomeiister" target="_blank"><i class="fa fa-github"></i><span class="text-hidden">Github</span></a>
+			<a class="link link--social link--faded link-blue" href="https://www.linkedin.com/in/jordan-jago-161b99192" target="_blank"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+			<a class="link link--social link--faded link-red" href="https://tryhackme.com/p/Jagomeister" target="_blank"><svg class="tryhackme" role="img" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" style="fill: #5cdcb4; position: absolute; width: 2em;"><path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27A3.273 3.273 0 0 1 6.59 7.08a.625.625 0 0 0 .7-1.035 4.488 4.488 0 0 0-1.68-.69 5.223 5.223 0 0 1 5.096-4.104 5.221 5.221 0 0 1 5.174 4.57 4.489 4.489 0 0 0-.488.305.625.625 0 1 0 .731 1.013 3.245 3.245 0 0 1 1.912-.616 3.278 3.278 0 0 1 3.203 2.61.625.625 0 0 0 1.225-.251 4.533 4.533 0 0 0-4.428-3.61 4.54 4.54 0 0 0-.958.105C16.556 2.328 13.9 0 10.705 0zm5.192 10.64a.925.925 0 0 0-.462.108.913.913 0 0 0-.313.29 1.27 1.27 0 0 0-.175.427 2.39 2.39 0 0 0-.054.514c0 .181.018.353.054.517.036.164.095.307.175.43a.899.899 0 0 0 .313.297c.127.073.281.11.462.11.18 0 .334-.037.46-.11a.897.897 0 0 0 .309-.296c.08-.124.137-.267.173-.431.036-.164.054-.336.054-.517 0-.18-.018-.352-.054-.514a1.271 1.271 0 0 0-.173-.426.901.901 0 0 0-.309-.291.917.917 0 0 0-.46-.108zm6.486 0a.925.925 0 0 0-.462.108.913.913 0 0 0-.313.29 1.27 1.27 0 0 0-.175.427 2.39 2.39 0 0 0-.053.514c0 .181.017.353.053.517.036.164.095.307.175.43a.899.899 0 0 0 .313.297c.127.073.281.11.462.11.18 0 .334-.037.46-.11a.897.897 0 0 0 .31-.296c.078-.124.136-.267.172-.431.036-.164.054-.336.054-.517 0-.18-.018-.352-.054-.514a1.271 1.271 0 0 0-.173-.426.901.901 0 0 0-.308-.291.916.916 0 0 0-.461-.108zm-8.537.068l-.84.618.313.43.476-.368v1.877h.603v-2.557zm6.486 0l-.841.618.314.43.477-.368v1.877h.603v-2.557zm-4.435.445c.08 0 .143.028.193.084.05.057.087.127.114.21.026.083.044.173.054.269a2.541 2.541 0 0 1 0 .533c-.01.097-.028.187-.054.27a.584.584 0 0 1-.114.21.243.243 0 0 1-.193.085.248.248 0 0 1-.195-.086.584.584 0 0 1-.118-.209 1.245 1.245 0 0 1-.056-.27 2.645 2.645 0 0 1 0-.533c.01-.096.029-.186.056-.27a.583.583 0 0 1 .118-.209.25.25 0 0 1 .195-.084zm6.486 0c.08 0 .144.028.193.084.05.057.087.127.114.21.027.083.044.173.054.269a2.541 2.541 0 0 1 0 .533c-.01.097-.027.187-.054.27a.584.584 0 0 1-.114.21.243.243 0 0 1-.193.085.249.249 0 0 1-.195-.086.581.581 0 0 1-.117-.209 1.245 1.245 0 0 1-.056-.27 2.642 2.642 0 0 1 0-.533c.01-.096.028-.186.056-.27a.58.58 0 0 1 .117-.209.25.25 0 0 1 .195-.084zm-2.191 3.51a.93.93 0 0 0-.463.109.908.908 0 0 0-.312.291c-.08.122-.139.263-.175.426a2.383 2.383 0 0 0-.054.514c0 .18.018.353.054.516.036.164.094.308.175.432a.91.91 0 0 0 .312.296.92.92 0 0 0 .463.11c.18 0 .333-.037.46-.11a.892.892 0 0 0 .308-.296 1.32 1.32 0 0 0 .174-.432c.036-.163.054-.335.054-.516 0-.18-.018-.352-.054-.514a1.274 1.274 0 0 0-.174-.426.89.89 0 0 0-.309-.291.918.918 0 0 0-.46-.108zm-6.402.07l-.841.617.314.43.476-.369v1.878h.604v-2.557zm2.125 0l-.841.617.314.43.477-.369v1.878h.603v-2.557zm2.116 0l-.84.617.313.43.477-.369v1.878h.603v-2.557zm2.16.443c.08 0 .144.028.194.085a.605.605 0 0 1 .114.21c.026.083.044.172.053.269a2.639 2.639 0 0 1 0 .532 1.28 1.28 0 0 1-.053.27.585.585 0 0 1-.114.21.244.244 0 0 1-.193.085.25.25 0 0 1-.196-.085.589.589 0 0 1-.117-.21 1.245 1.245 0 0 1-.056-.27 2.597 2.597 0 0 1 0-.532c.01-.097.028-.186.056-.27a.589.589 0 0 1 .117-.209.249.249 0 0 1 .196-.085zm-6.729 3.073a.676.676 0 0 0-.335.078.661.661 0 0 0-.227.211.91.91 0 0 0-.127.31c-.027.118-.04.242-.04.373s.013.256.04.375a.93.93 0 0 0 .127.313.65.65 0 0 0 .227.215c.092.053.204.08.335.08a.655.655 0 0 0 .334-.08.65.65 0 0 0 .225-.215c.057-.09.1-.194.125-.313a1.75 1.75 0 0 0 .04-.375c0-.13-.014-.255-.04-.373a.931.931 0 0 0-.125-.31.658.658 0 0 0-.225-.21.667.667 0 0 0-.334-.08zm3.086 0a.675.675 0 0 0-.336.078.661.661 0 0 0-.226.211.907.907 0 0 0-.127.31 1.69 1.69 0 0 0-.04.373c0 .131.013.256.04.375a.928.928 0 0 0 .127.313c.058.09.134.162.226.215.093.053.205.08.336.08a.655.655 0 0 0 .334-.08.65.65 0 0 0 .224-.215c.058-.09.1-.194.126-.313a1.752 1.752 0 0 0 0-.748.94.94 0 0 0-.126-.31.657.657 0 0 0-.224-.21.667.667 0 0 0-.334-.08zm5.108 0a.675.675 0 0 0-.336.078.661.661 0 0 0-.226.211.91.91 0 0 0-.127.31c-.027.118-.04.242-.04.373s.013.256.04.375a.931.931 0 0 0 .127.313c.058.09.134.162.226.215.093.053.205.08.336.08.13 0 .243-.027.334-.08a.65.65 0 0 0 .224-.215c.058-.09.1-.194.126-.313a1.75 1.75 0 0 0 .04-.375c0-.13-.014-.255-.04-.373a.943.943 0 0 0-.126-.31.657.657 0 0 0-.224-.21.668.668 0 0 0-.334-.08zm-6.658.05l-.61.448.227.311.346-.266v1.362h.438v-1.856zm3.068 0l-.61.448.227.311.346-.266v1.362h.438v-1.856zm5.108 0l-.611.448.228.311.346-.266v1.362h.438v-1.856zm-9.712.322c.058 0 .105.02.14.062a.421.421 0 0 1 .083.151.96.96 0 0 1 .04.196 1.932 1.932 0 0 1 0 .386.954.954 0 0 1-.04.197.421.421 0 0 1-.083.152.176.176 0 0 1-.14.061.18.18 0 0 1-.141-.06.427.427 0 0 1-.085-.153.887.887 0 0 1-.041-.197 1.96 1.96 0 0 1 0-.386.893.893 0 0 1 .04-.196.42.42 0 0 1 .086-.151.181.181 0 0 1 .141-.062zm3.086 0c.058 0 .104.02.14.062a.421.421 0 0 1 .082.151.94.94 0 0 1 .04.196 1.906 1.906 0 0 1 0 .386.93.93 0 0 1-.04.197.421.421 0 0 1-.082.152.176.176 0 0 1-.14.061.18.18 0 0 1-.141-.06.42.42 0 0 1-.086-.153.846.846 0 0 1-.04-.197 1.965 1.965 0 0 1-.011-.195c0-.057.004-.121.01-.191a.849.849 0 0 1 .041-.196.42.42 0 0 1 .086-.151.182.182 0 0 1 .141-.062zm5.108 0c.058 0 .104.02.14.062a.421.421 0 0 1 .082.151.92.92 0 0 1 .04.196 1.963 1.963 0 0 1 0 .386.943.943 0 0 1-.04.197.421.421 0 0 1-.082.152.177.177 0 0 1-.14.061.18.18 0 0 1-.142-.06.437.437 0 0 1-.085-.153.95.95 0 0 1-.04-.197 1.965 1.965 0 0 1-.011-.195c0-.057.004-.121.01-.191a.959.959 0 0 1 .04-.196.47.47 0 0 1 .086-.151.181.181 0 0 1 .142-.062zm-1.684 1.814a.675.675 0 0 0-.336.079.66.66 0 0 0-.227.21.91.91 0 0 0-.127.31 1.731 1.731 0 0 0 0 .748.939.939 0 0 0 .127.314c.059.09.134.162.227.215.093.053.205.08.336.08a.66.66 0 0 0 .334-.08.648.648 0 0 0 .224-.215c.058-.09.1-.195.126-.314a1.737 1.737 0 0 0-.001-.747.928.928 0 0 0-.125-.31.65.65 0 0 0-.224-.211.668.668 0 0 0-.334-.079zm3.063 0a.676.676 0 0 0-.336.079.664.664 0 0 0-.227.21.906.906 0 0 0-.127.31 1.74 1.74 0 0 0 0 .748.936.936 0 0 0 .127.314.66.66 0 0 0 .227.215c.092.053.204.08.336.08a.654.654 0 0 0 .334-.08.648.648 0 0 0 .223-.215c.058-.09.1-.195.126-.314a1.74 1.74 0 0 0 0-.747.928.928 0 0 0-.126-.31.65.65 0 0 0-.223-.211.666.666 0 0 0-.334-.079zm-1.545.05l-.611.448.228.312.346-.267v1.363h.438v-1.856zm-1.518.323c.057 0 .104.02.14.061a.42.42 0 0 1 .082.152.91.91 0 0 1 .04.195 1.966 1.966 0 0 1 0 .387.951.951 0 0 1-.04.197.421.421 0 0 1-.082.152.177.177 0 0 1-.14.06.18.18 0 0 1-.142-.06.428.428 0 0 1-.085-.152.914.914 0 0 1-.04-.197 1.96 1.96 0 0 1-.011-.195c0-.058.003-.122.01-.192a.923.923 0 0 1 .041-.195c.02-.06.048-.11.085-.152a.181.181 0 0 1 .142-.061zm3.063 0c.057 0 .104.02.14.061a.42.42 0 0 1 .082.152.94.94 0 0 1 .04.195 1.91 1.91 0 0 1 0 .387.93.93 0 0 1-.04.197.422.422 0 0 1-.083.152.175.175 0 0 1-.14.06.18.18 0 0 1-.141-.06.423.423 0 0 1-.085-.152.907.907 0 0 1-.04-.197 1.95 1.95 0 0 1 0-.387.915.915 0 0 1 .04-.195c.02-.06.048-.11.085-.152a.182.182 0 0 1 .142-.061zm-9.713.185a.465.465 0 0 0-.232.055.456.456 0 0 0-.157.146.627.627 0 0 0-.089.215 1.168 1.168 0 0 0-.027.259c0 .09.009.177.027.26a.648.648 0 0 0 .089.216c.04.063.093.112.157.149a.459.459 0 0 0 .232.056c.09 0 .168-.02.231-.056a.45.45 0 0 0 .156-.149.67.67 0 0 0 .087-.217 1.218 1.218 0 0 0 0-.518.647.647 0 0 0-.087-.215.448.448 0 0 0-.156-.146.458.458 0 0 0-.23-.055zm1.052.035l-.423.31.158.217.24-.185v.944h.303v-1.286zm-1.052.224c.04 0 .073.014.097.042a.284.284 0 0 1 .057.105.69.69 0 0 1 .028.136c.004.049.007.092.007.133 0 .04-.003.086-.007.135a.684.684 0 0 1-.028.136.285.285 0 0 1-.057.105.123.123 0 0 1-.097.043.125.125 0 0 1-.098-.043.298.298 0 0 1-.059-.105.612.612 0 0 1-.028-.136 1.39 1.39 0 0 1 0-.268.62.62 0 0 1 .028-.136.297.297 0 0 1 .06-.105.125.125 0 0 1 .097-.042zm3.775 1.394a.463.463 0 0 0-.232.054.452.452 0 0 0-.157.146.621.621 0 0 0-.088.214 1.19 1.19 0 0 0 0 .519.641.641 0 0 0 .088.217.46.46 0 0 0 .157.15.458.458 0 0 0 .232.054.454.454 0 0 0 .232-.055.45.45 0 0 0 .155-.149.664.664 0 0 0 .087-.217 1.189 1.189 0 0 0 0-.519.642.642 0 0 0-.087-.214.446.446 0 0 0-.155-.146.459.459 0 0 0-.232-.054zm1.052.034l-.423.31.158.216.24-.185v.945h.303V22.68zm-1.052.223c.04 0 .073.014.098.043a.3.3 0 0 1 .057.105.643.643 0 0 1 .027.135 1.31 1.31 0 0 1 0 .268.654.654 0 0 1-.027.137.307.307 0 0 1-.057.105.124.124 0 0 1-.098.042.125.125 0 0 1-.098-.042.293.293 0 0 1-.059-.105.618.618 0 0 1-.028-.137 1.364 1.364 0 0 1 0-.268.612.612 0 0 1 .028-.135.287.287 0 0 1 .06-.105.123.123 0 0 1 .097-.043z"/></svg><span class="text-hidden">Facebook</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<div class="page" id="page-section01">
+			<svg class="logoSVG" version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="150.000000pt" height="150.000000pt" viewBox="0 0 460.000000 460.000000"
+ preserveAspectRatio="xMidYMid meet" style="fill: #5cdcb4;">
+<g transform="translate(0.000000,460.000000) scale(0.100000,-0.100000)"
+stroke="none">
+<path d="M3530 4465 c0 -9 9 -41 21 -73 46 -124 91 -282 110 -381 19 -103 24
+-242 10 -291 -6 -22 -10 -18 -38 42 -17 36 -34 76 -38 89 -4 13 -21 44 -36 70
+-16 25 -29 49 -29 52 0 16 -83 127 -119 160 -45 41 -87 64 -97 54 -4 -4 11
+-30 33 -59 146 -192 221 -347 237 -494 14 -120 -29 -343 -86 -442 -37 -66
+-139 -167 -211 -210 -50 -31 -228 -112 -244 -112 -3 0 34 42 84 93 101 105
+173 208 173 248 0 42 -15 42 -33 1 -23 -53 -118 -154 -196 -209 -80 -56 -198
+-158 -242 -207 -17 -20 -37 -36 -45 -36 -17 0 -18 -5 5 57 22 59 54 109 80
+123 10 5 38 48 62 95 56 113 76 127 354 240 105 43 205 153 205 225 0 11 -16
+37 -36 56 -46 46 -54 70 -54 155 0 143 -58 308 -132 375 -50 45 -67 43 -31 -3
+47 -62 60 -86 84 -159 19 -61 22 -92 24 -263 l1 -195 -29 -33 c-16 -18 -33
+-33 -38 -33 -5 0 -8 56 -7 128 1 70 -1 133 -5 140 -5 7 -18 10 -31 6 -27 -6
+-38 5 -110 121 -31 49 -66 101 -78 114 -39 45 -32 4 16 -91 25 -50 44 -93 42
+-95 -2 -2 -15 1 -30 7 -34 13 -79 13 -74 0 2 -5 32 -24 68 -43 102 -54 136
+-118 106 -197 -10 -25 -21 -66 -25 -92 -9 -55 -21 -71 -100 -127 l-58 -41 -7
+49 c-7 51 -44 134 -60 132 -5 -1 -8 -34 -7 -74 1 -41 -1 -86 -5 -101 -5 -22
+-9 -24 -21 -14 -11 8 -14 24 -10 50 5 38 -4 50 -20 26 -4 -7 -10 -44 -13 -83
+-5 -67 -6 -70 -31 -73 -37 -4 -64 45 -95 179 -47 200 -62 101 -18 -116 17 -85
+25 -149 22 -189 -3 -54 -9 -68 -51 -123 -51 -67 -97 -156 -97 -189 0 -12 -7
+-25 -16 -28 -21 -8 -393 -6 -423 3 -17 5 -29 20 -40 51 -9 25 -31 73 -49 107
+-37 72 -40 113 -18 238 21 119 30 232 19 238 -5 4 -21 -41 -36 -99 -14 -58
+-33 -117 -42 -130 -39 -59 -78 -33 -68 45 5 48 -8 91 -28 91 -7 0 -9 -10 -5
+-26 9 -33 -1 -64 -20 -64 -21 0 -101 168 -109 229 -15 108 -62 76 -51 -33 4
+-34 9 -76 13 -93 7 -41 -3 -41 -44 -2 -26 24 -33 38 -33 69 0 21 -9 59 -20 85
+-11 26 -20 57 -20 69 0 44 43 106 99 144 30 20 57 43 59 50 5 17 -23 15 -60
+-4 -16 -9 -28 -12 -26 -7 13 28 51 110 68 148 20 46 13 67 -12 37 -19 -22 -88
+-137 -89 -148 0 -5 -16 -29 -35 -54 -19 -25 -46 -69 -60 -98 -23 -46 -26 -63
+-22 -132 3 -72 2 -77 -14 -69 -41 22 -51 67 -50 214 2 208 36 366 102 478 12
+20 17 37 12 37 -21 0 -91 -103 -123 -178 -28 -67 -33 -92 -38 -202 -8 -132
+-17 -164 -66 -209 -16 -15 -25 -34 -25 -53 0 -58 112 -192 178 -213 45 -13
+177 -77 224 -107 26 -16 68 -57 93 -90 48 -65 175 -305 153 -292 -7 4 -26 18
+-43 30 -16 12 -73 45 -126 72 -132 69 -194 111 -259 173 -64 62 -106 121 -125
+176 -18 51 -35 54 -35 6 0 -61 49 -150 124 -223 36 -36 66 -68 66 -72 0 -36
+-175 87 -273 192 -228 244 -265 572 -101 904 45 92 154 238 202 272 23 16 30
+44 10 44 -24 0 -107 -62 -169 -127 -136 -142 -215 -278 -287 -498 l-10 -30
+-18 40 c-25 55 -25 242 0 335 24 86 66 334 66 388 0 56 -14 53 -30 -5 -6 -27
+-27 -100 -46 -163 -61 -211 -67 -245 -68 -405 -1 -145 0 -153 33 -250 88 -261
+172 -399 356 -579 79 -78 79 -79 45 -73 -115 21 -113 21 -163 -17 -56 -43 -62
+-42 -134 38 -59 64 -126 190 -142 264 -6 29 -11 107 -11 173 0 145 -12 152
+-52 33 -20 -57 -27 -99 -28 -153 0 -129 34 -210 161 -381 l41 -55 -7 -111 c-5
+-102 -4 -112 14 -128 34 -31 62 -13 157 98 54 62 99 106 114 110 14 3 75 9
+135 12 l110 6 125 -60 c69 -33 171 -75 228 -93 107 -35 121 -49 84 -82 -24
+-22 -42 -21 -94 2 -77 35 -326 111 -362 111 -19 0 -37 4 -40 8 -8 13 -117 -3
+-127 -19 -27 -39 14 -151 89 -245 64 -80 124 -122 218 -154 44 -15 87 -30 97
+-34 28 -13 21 42 -13 96 -21 33 -37 48 -59 53 -27 6 -31 11 -31 41 0 28 -6 38
+-32 54 -19 11 -51 20 -74 20 -26 0 -53 8 -74 22 -41 28 -49 48 -20 48 11 0 35
+7 52 16 35 18 70 12 98 -16 13 -13 34 -20 59 -20 27 0 49 -8 69 -25 19 -16 42
+-25 64 -25 47 0 73 -30 72 -81 -1 -41 -26 -79 -51 -79 -11 0 -11 -5 2 -30 19
+-37 19 -50 -2 -66 -16 -12 -16 -15 -3 -24 52 -36 90 -16 90 47 0 37 36 141 56
+163 12 13 16 12 30 -8 8 -12 26 -22 38 -22 22 0 23 -3 16 -37 -4 -21 -11 -46
+-15 -55 -5 -14 2 -21 34 -34 46 -18 91 -65 91 -95 0 -11 -9 -38 -21 -60 -22
+-45 -66 -69 -123 -69 l-34 0 -16 -87 c-18 -97 -21 -199 -7 -207 5 -4 17 30 27
+75 19 87 30 105 72 115 75 18 140 100 143 179 0 29 1 28 20 -15 11 -25 27 -52
+36 -62 14 -15 11 -20 -28 -57 -42 -38 -57 -46 -87 -42 -7 1 -26 -8 -42 -19
+-23 -16 -30 -29 -30 -55 0 -43 -9 -65 -26 -65 -24 0 -43 -43 -43 -100 0 -30
+-1 -64 -3 -74 -2 -12 5 -24 18 -31 12 -6 28 -16 35 -22 8 -6 25 -10 39 -9 22
+1 26 7 30 46 7 54 17 73 36 66 11 -4 14 2 13 27 -2 17 -2 64 -1 103 l2 72 56
+43 c31 24 72 61 92 82 47 50 98 52 139 7 15 -17 43 -40 63 -52 47 -29 89 -67
+106 -100 11 -21 11 -41 2 -105 -9 -66 -9 -84 5 -116 23 -53 77 -72 77 -26 0
+25 8 24 37 -3 13 -12 25 -19 28 -16 3 3 0 50 -6 104 -18 158 -71 244 -150 244
+-35 0 -91 39 -99 70 -10 40 3 75 30 78 27 4 50 -20 50 -54 0 -15 8 -25 23 -30
+12 -3 30 -13 39 -22 13 -11 21 -12 31 -3 11 8 16 5 25 -14 10 -22 14 -24 33
+-13 32 20 59 -19 60 -91 l1 -56 10 49 c6 32 5 59 -2 79 -14 43 -12 112 5 154
+20 48 20 48 -21 24 -19 -12 -45 -21 -56 -21 -34 0 -108 52 -108 75 0 25 64 90
+103 105 28 10 29 13 25 65 -1 30 0 55 4 55 3 0 21 12 38 26 17 15 33 24 37 21
+3 -3 9 -41 13 -84 12 -114 14 -116 58 -88 20 13 45 31 55 40 18 16 17 18 -17
+50 -20 18 -36 40 -36 48 0 22 47 75 73 82 42 12 97 38 97 46 0 5 19 22 42 39
+43 31 94 40 115 19 9 -9 21 -8 46 5 45 21 57 20 57 -3 0 -38 -34 -64 -101 -78
+-83 -17 -113 -39 -119 -89 -5 -37 -7 -39 -43 -44 -33 -4 -42 -11 -64 -51 -38
+-67 -29 -83 45 -74 71 9 84 15 152 79 126 117 220 256 220 327 0 28 -2 30 -27
+25 -16 -3 -59 -10 -98 -16 -91 -14 -254 -64 -327 -101 -32 -16 -72 -29 -90
+-29 -37 0 -78 24 -78 45 0 17 66 75 87 75 25 0 248 78 331 116 69 32 76 33
+130 23 76 -15 123 -40 145 -81 21 -38 153 -148 179 -148 34 0 51 67 23 90 -33
+27 -3 102 69 172 122 120 191 343 135 434 -11 19 -25 34 -30 34 -12 0 -22 -46
+-16 -72 11 -39 -12 -122 -48 -173 -79 -114 -182 -205 -232 -205 -14 0 -36 12
+-51 28 -15 16 -36 33 -46 39 -18 10 -18 12 -3 27 9 9 33 38 54 64 21 26 43 52
+49 57 6 6 32 43 59 83 108 167 161 343 172 577 5 115 3 146 -21 270 -33 172
+-75 307 -117 383 -48 85 -79 115 -79 77z m-1190 -1920 c0 -35 0 -35 45 -35 43
+0 45 -1 45 -30 0 -28 -2 -30 -40 -30 l-39 0 -3 -107 -3 -108 -27 -3 -28 -3 0
+105 0 106 -41 0 c-39 0 -40 1 -37 33 3 29 6 32 41 35 35 3 37 5 37 38 0 30 3
+34 25 34 22 0 25 -4 25 -35z"/>
+<path d="M2648 2244 c-15 -8 -33 -24 -39 -37 -6 -12 -9 -19 -5 -16 4 4 18 -4
+31 -17 26 -26 41 -29 79 -14 19 7 26 17 26 36 0 19 4 25 15 20 26 -10 16 3
+-17 24 -39 24 -54 24 -90 4z"/>
+<path d="M1885 2220 c-22 -11 -30 -18 -17 -16 16 3 22 -1 22 -13 0 -10 10 -27
+23 -39 34 -32 117 -28 117 5 0 13 3 13 15 3 18 -15 19 -9 3 25 -25 54 -94 69
+-163 35z"/>
+<path d="M2250 1993 c-25 -25 -69 -60 -97 -79 -33 -21 -53 -41 -53 -52 0 -10
+14 -47 31 -81 25 -49 39 -66 72 -82 23 -12 51 -29 62 -39 17 -16 27 -17 70 -9
+27 5 55 7 61 5 6 -2 32 14 58 37 37 34 47 50 50 82 3 22 7 48 11 57 13 33 -23
+84 -77 109 -27 13 -65 40 -83 61 -17 21 -38 38 -46 38 -8 -1 -34 -21 -59 -47z
+m40 -158 c23 -21 73 -19 103 5 32 25 57 26 57 1 0 -12 -12 -23 -32 -32 -18 -7
+-45 -21 -59 -32 -23 -16 -30 -17 -50 -6 -13 7 -30 19 -38 26 -8 8 -25 13 -37
+10 -14 -2 -30 3 -39 14 -15 16 -15 18 2 28 22 14 71 6 93 -14z"/>
+<path d="M2748 1653 c-1 -16 -1 -43 1 -60 2 -29 -1 -33 -21 -33 -20 0 -26 -8
+-36 -46 -8 -29 -26 -60 -48 -82 -35 -35 -38 -49 -19 -94 6 -15 2 -18 -19 -18
+-19 0 -26 -5 -26 -20 0 -79 -138 -294 -231 -361 l-29 -21 -35 22 c-49 31 -137
+131 -168 192 -19 37 -27 69 -27 105 0 28 -3 58 -6 67 -7 18 -54 22 -54 5 0 -8
+-5 -8 -15 1 -21 17 -19 29 10 52 34 27 32 36 -17 58 -48 21 -61 38 -78 99 -9
+35 -15 42 -33 39 -16 -2 -22 2 -23 17 -2 46 -4 55 -13 55 -12 0 -37 -77 -50
+-154 -11 -61 -15 -136 -6 -136 22 0 57 29 67 56 19 54 30 19 23 -73 -5 -53 -3
+-83 3 -83 6 0 12 6 15 13 5 14 11 -10 28 -115 12 -82 23 -95 39 -52 14 37 32
+25 57 -37 25 -65 85 -137 127 -154 28 -12 43 -26 85 -78 7 -9 19 -34 27 -54 9
+-27 13 -32 14 -16 0 16 5 21 15 17 10 -4 15 0 15 15 0 26 53 61 92 61 54 0
+184 187 204 294 l7 40 26 -52 27 -52 13 45 c13 45 9 132 -9 179 -4 12 -4 30 1
+41 7 18 8 17 8 -6 1 -21 36 -69 52 -69 8 0 -3 95 -14 108 -8 11 -5 11 19 1 16
+-7 33 -16 39 -21 20 -18 25 -5 25 70 0 113 -29 262 -51 262 -5 0 -10 -12 -11
+-27z"/>
+<path d="M2277 1593 c-20 -14 -37 -30 -37 -34 0 -10 41 -22 61 -18 8 2 24 -1
+37 -5 13 -4 35 -5 48 -2 23 6 24 8 10 28 -14 19 -64 58 -76 58 -3 0 -22 -12
+-43 -27z"/>
+<path d="M2160 1545 c-14 -8 -52 -14 -86 -15 -55 0 -62 -3 -67 -21 -4 -16 2
+-30 22 -48 16 -15 32 -37 36 -50 l7 -23 33 32 c32 31 32 31 38 9 l6 -22 31 27
+c58 48 64 32 20 -55 -28 -56 -29 -74 -2 -47 16 16 15 -1 -3 -32 -8 -14 -14
+-37 -15 -52 0 -25 2 -27 24 -18 21 8 26 5 36 -20 6 -16 20 -36 30 -45 18 -16
+20 -16 34 16 l14 34 7 -33 c4 -18 11 -35 15 -37 10 -6 40 39 40 60 0 21 30 31
+41 14 8 -12 11 -12 19 1 5 8 10 25 10 38 0 19 4 22 20 17 20 -6 28 9 11 19 -5
+3 -11 23 -13 43 -3 21 -8 45 -12 54 -6 13 1 18 31 25 21 4 46 7 55 6 9 -1 20
+7 23 18 8 27 51 54 71 46 26 -10 12 24 -19 48 -24 17 -32 19 -58 9 -26 -10
+-37 -9 -61 3 -27 14 -32 13 -84 -12 -47 -23 -63 -26 -111 -21 -34 4 -68 14
+-84 26 -33 24 -28 24 -59 6z"/>
+<path d="M2847 1227 c-4 -74 -10 -142 -13 -151 -12 -31 -33 -15 -48 37 -9 30
+-24 61 -33 70 -18 15 -18 13 -12 -61 11 -134 -7 -233 -56 -307 -31 -47 -39
+-48 -50 -4 -5 22 -14 40 -20 40 -5 -1 -27 -41 -48 -89 -21 -48 -60 -118 -85
+-157 l-47 -70 -3 43 c-4 58 -22 50 -43 -21 -15 -50 -63 -147 -74 -147 -2 0
+-14 17 -26 37 -13 20 -42 59 -66 85 -29 33 -49 68 -60 108 l-18 59 -20 -19
+-21 -20 -39 80 c-21 44 -42 80 -46 80 -4 0 -11 -10 -15 -22 -6 -21 -9 -19 -26
+22 -11 25 -22 69 -25 98 -6 58 -19 75 -31 42 -7 -19 -9 -18 -29 17 -33 59 -56
+160 -51 227 l4 59 -23 -27 c-29 -34 -49 -28 -59 16 l-8 33 -7 -40 c-13 -68 8
+-250 42 -360 57 -184 123 -289 293 -463 156 -160 178 -186 207 -245 l25 -47
+77 102 c76 103 152 185 224 245 76 62 194 307 244 508 27 104 30 133 27 220
+-3 64 -9 110 -19 129 -15 27 -16 22 -22 -107z"/>
+</g>
+</svg>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <h3>Cyber Security Intern</h3>
-                    <p>SecureStack - May 2023 - Current</p>
-                    <p>
-                        During my internship at SecureStack, I gained valuable experience in web application vulnerability testing and assessments. 
-                        I conducted security research to identify potential threats and trends, contributing to the enhancement of our cybersecurity measures. 
-                        I had the opportunity to work with big data sets and learn about detections as code. 
-                        Collaborating with various teams, I actively participated in cybersecurity tasks and projects, gaining exposure to a diverse range of responsibilities within the field. 
-                        This internship provided me with a solid foundation in cybersecurity and valuable insights into real-world applications of security protocols.
-                    </p>
-                </li>
-                <li>
-                    <h3>Café all-rounder</h3>
-                    <p>The Black Lamb Espresso Baa & Catering - 2020 - Current</p>
-                    <p>I worked as a Glassy at Sin City Night Club for two years. I was responsible for stocking the bar, ensuring the club was kept in a presentable manner and providing excellent customer service.
-                        I was also responsible for making sure the bar was fully stocked and the glasses were clean and ready to serve. 
-                        I worked closely with the bar staff to ensure the smooth running of the bar and provided assistance with any customer queries. 
-                        My role also required me to be on the lookout for any potential hazards or issues that could affect the safety of customers. 
-                        I gained valuable experience in customer service and bar management during my time at Sin City Night Club.</p>
-                </li>
-                <li>
-                    <h3>Glassy</h3>
-                    <p>Sin City Nightclub - 2018-2020</p>
-                    <p>I worked as a Glassy at Sin City Night Club for two years. I was responsible for stocking the bar, ensuring the club was kept in a presentable manner and providing excellent customer service.
-                        I was also responsible for making sure the bar was fully stocked and the glasses were clean and ready to serve. 
-                        I worked closely with the bar staff to ensure the smooth running of the bar and provided assistance with any customer queries. 
-                        My role also required me to be on the lookout for any potential hazards or issues that could affect the safety of customers. 
-                        I gained valuable experience in customer service and bar management during my time at Sin City Night Club.</p>
-                </li>
-                <li>
-                    <h3>Dispatch worker</h3>
-                    <p>Prolife Foods - 2016-2017</p>
-                    <p>At Prolife Foods, I worked as a Dispatch Worker for two years. My role was to package and send courier packages to customers all over New Zealand and Australia. I was responsible for ensuring orders were correctly packaged and sent out on time. 
-                        I also provided excellent customer service by responding to customer enquiries and feedback in a timely and professional manner. 
-                        I worked with a team of people to ensure the dispatch process was efficient and effective. 
-                        I learned a great deal during my time at Prolife Foods and gained valuable experience in the logistics industry.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Certificate 4 in Cyber Security</h3>
-                    <p>2021-2022, TAFE Coomera, QLD, Australia</p>
-                    <p>I completed a Certificate Level 4 in Cyber Security at TAFE Coomera QLD, Australia. This course focused on developing my knowledge and skills in the field of cyber security, such as network security, malware analysis, and ethical hacking. It provided me with a strong foundation to build upon, and I am now confident in my ability to protect networks from malicious activity. Additionally, I gained an understanding of the different types of cyber attacks and the techniques used to counter them. This knowledge has been invaluable in my current role.</p>
-                </li>
-                <li>
-                    <h3>Diploma Information Technology</h3>
-                    <p>2017-2017, Wintec Waikato, New Zealand</p>
-                    <p>During my studies for the Diploma in Information Technology at Wintec in Waikato, New Zealand, I gained valuable insights into various aspects of IT. The program covered topics such as programming languages, database management, systems analysis, and software development methodologies. 
-                       I had the opportunity to work on practical projects that allowed me to apply theoretical knowledge in real-world scenarios. 
-                       This diploma equipped me with a solid understanding of IT fundamentals and prepared me for further specialization in the field.
-                    </p>
-                </li>
-                <li>
-                    <h3>Highschool Diploma</h3>
-                    <p>2015, Cambridge High School, Cambridge Waikato, New Zealand</p>
-                    <p>I graduated high school from Cambridge High in Cambridge Waikato, New Zealand. I achieved good grades and was a dedicated student throughout my high school career.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form" action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="form-message"></div>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Jordan Jago. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+		</div>
+		<div class="page" id="page-section02">
+		
+		</div>
+		<div class="page" id="page-section03">
+			
+		</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
