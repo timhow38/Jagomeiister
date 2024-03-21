@@ -83,7 +83,7 @@ html.js,
 
 .link:hover,
 .link:focus {
-	color: #000000;
+	color: #fff;
 }
 .link--page {
 	display: block;
